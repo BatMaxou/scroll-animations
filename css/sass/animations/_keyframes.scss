@@ -1,0 +1,67 @@
+@keyframes scroll-watcher {
+    to {
+        scale: 1 1;
+    }
+}
+
+@keyframes landing-text {
+    to {
+        left: 100%;
+        translate: 0 -50%;
+    }
+}
+
+@keyframes fade-out-landing-image {
+    25% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 0;
+        scale: 2.7;
+    }
+    100% {
+        opacity: 0;
+        scale: 1;
+    }
+}
+
+@keyframes section-fade-out {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes title-left {
+    from {
+        margin-left: 100%;
+        opacity: 0;
+    }
+    to {
+        color: $blue;
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes title-right {
+    from {
+        margin-right: 100%;
+        opacity: 0;
+    }
+    to {
+        color: $purple;
+        margin-right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes image-fade-in {
+    from {
+        scale: 0.8;
+        opacity: 0;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
