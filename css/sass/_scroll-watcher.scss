@@ -1,6 +1,5 @@
 .scroll-watcher {
     position: fixed;
-    top: 0;
     z-index: 10;
     animation: scroll-watcher linear;
     animation-timeline: scroll();
@@ -19,6 +18,14 @@
         background-color: $purple;
         scale: 1 0;
         // transform-origin: top;
+    }
+
+    &--right {
+        right: 0;
+    }
+
+    &--bottom {
+        bottom: 0;
     }
 }
 

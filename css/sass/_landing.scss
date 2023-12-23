@@ -39,8 +39,12 @@
     25% {
         opacity: 1;
     }
-    85%, 100% {
+    85% {
         opacity: 0;
         scale: 2.7;
+    }
+    100% {
+        opacity: 0;
+        scale: 1;
     }
 }
