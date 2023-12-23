@@ -13,26 +13,3 @@
         animation-range: 0 40%;
     }
 }
-
-
-@keyframes title-left {
-    from {
-        opacity: 0;
-    }
-    to {
-        color: $blue;
-        margin-left: 0;
-        opacity: 1;
-    }
-}
-
-@keyframes title-right {
-    from {
-        opacity: 0;
-    }
-    to {
-        color: $purple;
-        margin-right: 0;
-        opacity: 1;
-    }
-}

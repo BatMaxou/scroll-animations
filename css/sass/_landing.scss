@@ -14,7 +14,6 @@
         animation-range: exit;
     }
 
-
     h1 {
         width: 100%;
         text-align: center;
@@ -25,26 +24,5 @@
         animation: landing-text linear forwards;
         animation-timeline: view();
         animation-range: 50%;
-    }
-}
-
-@keyframes landing-text {
-    to {
-        left: 100%;
-        translate: 0 -50%;
-    }
-}
-
-@keyframes fade-out-landing-image {
-    25% {
-        opacity: 1;
-    }
-    85% {
-        opacity: 0;
-        scale: 2.7;
-    }
-    100% {
-        opacity: 0;
-        scale: 1;
     }
 }
