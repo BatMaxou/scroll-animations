@@ -1,3 +1,5 @@
 # Scroll Animations
 
-Little animations that trigger when you scroll.
+Little animations made with CSS only that trigger on scroll.
+
+There animations are not implemented when `prefers-reduced-motion` is activated or if your browser does not support `animation-timeline` property.

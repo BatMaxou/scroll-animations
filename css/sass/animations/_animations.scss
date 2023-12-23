@@ -1,0 +1,51 @@
+@media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: scroll()) and (animation-timeline: view()) {
+        @import "keyframes";
+
+        .scroll-watcher {
+            animation: scroll-watcher linear;
+            animation-timeline: scroll();
+        }
+
+        .landing {
+            img {
+                animation: fade-out-landing-image linear forwards;
+                animation-timeline: view();
+                animation-range: exit;
+            }
+
+            h1 {
+                position: fixed;
+                animation: landing-text linear forwards;
+                animation-timeline: view();
+                animation-range: 50%;
+            }
+        }
+
+        .section {
+            animation: section-fade-out linear forwards;
+            animation-timeline: view();
+            animation-range: exit -25%;
+        }
+
+        .title-animated {
+            &--left {
+                animation: title-left linear forwards;
+                animation-timeline: view();
+                animation-range: 0 40%;
+            }
+
+            &--right {
+                animation: title-right linear forwards;
+                animation-timeline: view();
+                animation-range: 0 40%;
+            }
+        }
+
+        .image-animated {
+            animation: image-fade-in linear forwards;
+            animation-timeline: view();
+            animation-range: 0 20%;
+        }
+    }
+}
